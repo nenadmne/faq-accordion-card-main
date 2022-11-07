@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./jscript.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+  <body>
+    <main>
+      <div class="img-div">
+        <img class="mobile" src="./images/illustration-woman-online-mobile.svg" alt="mobile img">
+        <img class="desktop" src="./images/illustration-woman-online-desktop.svg" alt="desktop">
+      </div>
+      <div class="text">
+        <div class="heading">
+          <h1>FAQ</h1>
+        </div>
+
+        <div id="first-div" class="q-div">
+
+          <div class="row">
+            <div id="first">
+              <h2 id="head1" onclick="show1()">How many team members can I invite?</h2>
+            </div>
+            <div>
+              <img id="img" src="./images/icon-arrow-down.svg" alt="icon-arrow-down" onclick="show1()">
+            </div>
+          </div>
+
+        </div>
+
+        <div id="second-div" class="q-div">
+          <div class="row">
+            <div>
+              <h2 id="head2" onclick="show2()" >What is the maximum file upload size?</h2>
+            </div>
+            <div>
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" onclick="show2()">
+            </div>
+          </div>
+          
+        </div>
+
+        <div id="third-div" class="q-div">
+          <div class="row">
+            <div>
+              <h2 id="head3" onclick="show3()">How do I reset my password?</h2>
+            </div>
+            <div>
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" onclick="show3()">
+            </div>
+          </div>
+        </div>
+
+        <div id="forth-div" class="q-div">
+          <div class="row">
+            <div>
+              <h2 id="head4" onclick="show4()">Can I cancel my subscription?</h2>
+            </div>
+            <div>
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" onclick="show4()">
+            </div>
+          </div>
+        </div>
+
+        <div id="fifth-div" class="q-div">
+          <div class="row">
+            <div>
+              <h2 id="head5" onclick="show5()">Do you provide additional support?</h2>
+            </div>
+            <div>
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" onclick="show5()">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

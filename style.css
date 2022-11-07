@@ -1,0 +1,229 @@
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+html, .row, body, .img-div, .img-div , main{
+    width: 100%;
+} 
+
+body, main, .text, .row, .q-div, .img-div {
+    display: flex;
+}
+
+body, html {
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 570px;
+    max-height: 900px;
+}
+
+body, html, main, h1, h2 {
+    margin: 0%;
+}
+
+main {
+    height: 470px;
+    position: relative;
+}
+
+body, html, main, .text, .q-div, .img-div{
+    box-sizing: border-box;
+}
+
+main, .text {
+    flex-direction: column;
+    max-width: 322.5px;
+}
+
+body {
+    padding: 40% 7%;
+    background-color: hsl(273, 75%, 66%);
+}
+
+.text {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 40% 7% 15% 7%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+h2 {
+    padding: 5% 0;
+}
+
+.q-div{
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#div1, #div2, #div3, #div4, #div5 {
+    padding: 0 0% 5% 0;
+    color:hsl(240, 6%, 50%);
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+h2:hover {
+    color: hsl(14, 88%, 65%) !important;
+    cursor: pointer;
+}
+
+.img-div{
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile {
+    position: absolute;
+    width: 70%;
+    min-height: 70%;
+    top:-39%;
+}
+
+.desktop {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+body::before {
+    content: "";
+    background-image: url("./images/bg-pattern-mobile.svg");
+    width: 70%;
+    height: 70%;
+    top: -8%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width:576px) {
+    .text, main {
+        width: 900px;
+        height: 550px;
+        max-width: none;
+    }
+
+    body {
+        padding: 10% 5%;
+        position: none;
+    }
+
+    body,html {
+        width: 100%;
+        height: fit-content;
+        max-width: none;
+        min-width: 1440px;
+        max-height: none;
+        min-height: none;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .text, .img-div {
+        flex-basis: 50%;
+    }
+
+    .text {
+        padding: 7% 10% 10% 0;
+        border-radius: 0 1rem 1rem 0;
+        border: 0;
+        position: relative;
+    }
+    
+    .img-div {
+        width: 100%;
+        background-color: white;
+        z-index: -2;
+        border: 0;
+        border-radius: 1rem 0 0 1rem;
+        justify-content: left;
+        position: relative;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: none;
+    }
+
+    .img-div::before {
+        content: "";
+        background-image: url("./images/bg-pattern-desktop.svg");
+        width: 120%;
+        height: 120%;
+        top: -5%;
+        left: -35%;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .text::after {
+        content: "";
+        background-image: url("./images/illustration-box-desktop.svg");
+        width: 40%;
+        height: 40%;
+        top: 37%;
+        left: -119%;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: visible;
+    }
+
+    .mobile {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    .desktop {
+        width: 100%;
+        height: auto;
+        visibility: visible;
+        position: absolute;
+        left: -15%;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 3rem;
+        margin-bottom: 5%;
+    }
+
+    h2, p, #div1, #div2, #div3, #div4, #div5 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
